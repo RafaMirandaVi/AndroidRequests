@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <LinearLayout
+        android:id="@+id/event_info"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/primary_color"
+        android:orientation="vertical"
+        android:paddingBottom="22dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="22dp">
+
+        <TextView
+            android:id="@+id/event_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="@integer/max_lines_title"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/event_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="@integer/max_lines_date"
+            android:textColor="@color/primary_text" />
+
+        <TextView
+            android:id="@+id/event_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:maxLines="@integer/max_lines_desc" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etx_location_event"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/event_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:hint="@string/hint_location_events" />
+
+    <Button
+        android:id="@+id/btn_async"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etx_location_event"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_selector"
+        android:text="@string/async_label" />
+
+    <Button
+        android:id="@+id/btn_volley"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_async"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_selector"
+        android:text="@string/volley_label" />
+
+    <Button
+        android:id="@+id/btn_retrofit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_volley"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_selector"
+        android:text="@string/retrofit_label" />
+
+</RelativeLayout>
